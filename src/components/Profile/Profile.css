@@ -1,0 +1,105 @@
+
+/* mobile view styling */
+@media only screen and (max-width: 550px) {
+	/* ...your css here and you're good to go! */
+	section#profile{
+		position: relative;
+		width: 100vw;
+		height: calc(100vh - 7.5vh);
+		font-family: "Poppins", sans-serif;
+		overflow: hidden;
+	}
+
+	section#profile>h1{
+		margin-top: 4vh;
+		text-align: center;
+		font-size: 2.5vh;
+	}
+
+	section#profile>form{
+		position: relative;
+		width: 100%;
+		height: auto;
+		margin-top: 5vh;
+		display:grid;
+	}
+	section#profile>form>label{
+		font-size: 1.8vh;
+		display: grid;
+		width: 75%;
+		margin: 0 12.5%;
+		font-weight: 550;
+	}
+	section#profile>form>label>p{
+		font-size: 1.7vh;
+		font-weight: 300;
+		display: flex;
+		align-items: center;
+		height: 6vh;
+		border: none;
+		border-bottom: 1px solid #C0CCD9;
+		margin-bottom: 3vh;
+		color: #C0CCD9;
+	}
+
+	section#profile>h2{
+		font-size: 2vh;
+		width: 75%;
+		margin: 5% 12.5% 3%;
+	}
+	section#profile>.notif{
+		position: relative;
+		background-color: #F1F4F7;
+		width: 100%;
+		height: 8%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0 12.5%;
+	}
+	section#profile>.notif>p{
+		font-size: 1.7vh;
+		font-weight: 500;
+	}
+	section#profile>.notif>button{
+		position: relative;
+		display: flex;
+		align-items: center;
+		width: 8vh;
+		height: 4vh;
+		border: 2px solid #DADDDF;
+		border-radius: 50px;
+		background-color: white;
+	}
+	section#profile>.notif>button>.circle{
+		position: relative;
+		width: 45%;
+		height: 90%;
+		border-radius: 50%;
+		transition: 0.1s linear;
+	}
+	.notif-close{
+		background-color: silver;
+		left: 3%;
+	}
+	.notif-open{
+		background-color: var(--yelBG);
+		left: 50%;	
+	}
+	
+	section#profile>button{
+		position: relative;
+		color: white;
+		background-color: var(--yelBG);
+		border: none;
+		border-radius: 1vh;
+		width:40%;
+		height: 5.5%;
+		margin: 10% 30%;
+	}
+	section#profile>button>a{
+		color: white;
+		font-family: "Poppins", sans-serif;
+		font-size: 1.8vh;
+	}
+}

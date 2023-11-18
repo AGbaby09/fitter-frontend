@@ -1,0 +1,124 @@
+section#login{
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	background: var(--yelBG);
+}
+
+/* mobile view styling */
+@media only screen and (max-width: 550px) {
+	/* ...your css here and you're good to go! */
+	section#login>#back-button{
+		position: absolute;
+		top: 2vh;
+		left: 2vh;
+		font-size: 4vh;
+		z-index: 5;
+	}
+	section#login>form{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+
+	section#login>form>.form-title{
+		position: relative;
+		margin-top: 40%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 2vh;
+	}
+	section#login>form>.form-title>h1{
+		font-family: "Poppins", sans-serif;
+		font-weight: 750;
+	}
+	
+	section#login>form>.radios{
+		position: relative;
+		width: 50%;
+		font-family: "Poppins", sans-serif;
+		font-weight: 600;
+		margin: 2.5% 25% 0;
+		font-size: 1.7vh;
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+	section#login>form>.radios>label{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	section#login>form>.radios>label>input{
+		margin-right: 5px;
+		transform: scale(1.5);
+	}
+
+	section#login>form>.inputs{
+		position: relative;
+		width: 100%;
+		height: 15%;
+		display: grid;
+		gap: 2vh;
+		margin-top: 5%;
+	}
+	section#login>form>.inputs>input{
+		width: 75%;
+		margin: 0 12.5%;
+		border-radius: 1vh;
+		border: none;
+		background: var(--yelInput);
+		font-family: "Poppins", sans-serif;
+		font-size: 1.7vh;
+		padding-left: 5%;
+		color: black;
+	}
+	section#login>form>.inputs>input::placeholder{
+		color: black;
+	}
+	section#login>form>.inputs>input:focus{
+		outline: none;
+		box-shadow: 0 0 2px 1px #333;
+	}
+
+	section#login>form>.forgot{
+		width: 75%;
+		margin: 2% 12.5%;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+	}
+	section#login>form>.forgot>a{
+		color: #2E3192;
+		font-size: 1.5vh;
+		font-family: "Poppins", sans-serif;
+	}
+
+	section#login>form>button{
+		position:relative;
+		top: 1.5vh;
+		left:50%;
+		transform: translateX(-50%);
+		padding: 2.5% 21%;
+		border-radius: 1vh;
+		border: none;
+		font-family: "Poppins", sans-serif;
+		font-size: 2vh;
+		font-weight: 550;
+	}
+	
+	section#login>form>#toRegister{
+		position: relative;
+		width: 65%;
+		margin: 0 17.5%;
+		margin-top: 5vh;
+		display: flex;
+		font-size: 1.75vh;
+		justify-content: space-between;
+	}
+	section#login>form>#toRegister>a{
+		font-family: "Poppins", sans-serif;
+		color: white;
+	}
+}

@@ -1,0 +1,112 @@
+a{
+	text-decoration: none;
+	color: black;
+}
+
+/* mobile view styling */
+@media only screen and (max-width: 550px) {
+	main#home{
+		position: relative;
+		max-width: 100vw;
+		height: 100vh;
+		/* background: rgba(160, 152, 152, 0.25); */
+	}
+
+
+	main#home>.texts{
+		position: absolute;
+		width: 100%;
+		height: 70%;
+		top: 0;
+		/* background-color: teal; */
+		color: white;
+		z-index: 1;
+	}
+	main#home>.texts>h1{
+		position: relative;
+		font-family: Agbalumo;
+		font-size: 6vh;
+		top: 5%;
+		text-align: center;
+	}
+	main#home>.texts>h3{
+		position: absolute;
+		bottom: 10%;
+		padding-left: 7.5%;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 400;
+		font-size: 2.2vh;
+	}
+	main#home>.texts>p{
+		font-size: 1.3vh;
+		position: absolute;
+		bottom: 7%;
+		padding-left: 7.5%;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 200;
+	}
+
+
+	main#home>.carImage-container{
+		position: relative;
+		width: 100%;
+		height: 75%;
+	}
+	main#home>.carImage-container>img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: bottom;
+	}
+
+
+	main#home>.log-links{
+		position: absolute;
+		bottom: 0;
+		height: 30%;
+		width: 100%;
+		background: white;
+		border-radius: 30px 30px 0 0;
+		display: grid;
+	}
+	main#home>.log-links>.links{
+		position: relative;
+		margin: auto;
+		width: 50%;
+		height: 50%;
+		transform: translateY(-15%);
+	}
+	main#home>.log-links>.links>.link{
+		position: absolute;
+		width: 80%;
+		height: 40%;
+		left: 50%;
+		transform: translateX(-50%);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50px;
+		box-shadow: 0 0 1px 1px #aaa;
+		font-family: "Poppins", sans-serif;
+		font-size: 2vh;
+	}
+	
+	main#home>.log-links>.links>.login{top: 5%; background-color: black;}
+	main#home>.log-links>.links>.login>a{color: white; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;}
+	main#home>.log-links>.links>.register>a{font-weight: 600; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;}
+	main#home>.log-links>.links>.register{bottom: 5%;}
+
+
+	main#home>.log-links>.aboutLink{
+		position: absolute;
+		width: 50%;
+		height: 10%;
+		bottom: 15%;
+		left: 50%;
+		transform: translateX(-50%);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 1.7vh;
+	}
+}

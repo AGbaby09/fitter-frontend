@@ -1,0 +1,11 @@
+
+/* mobile view styling */
+@media only screen and (max-width: 550px) {
+	/* ...your css here and you're good to go! */
+	section#userLocation{
+		position: relative;
+		width: 100vw;
+		height: calc(100vh - 7.5vh);
+		background-color: forestgreen;
+	}
+}

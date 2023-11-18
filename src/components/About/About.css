@@ -1,0 +1,138 @@
+h1{font-family: 'Montserrat', sans-serif;}
+p{font-family: 'Poppins', sans-serif;}
+#fitter{font-family: Agbalumo;}
+/* mobile view styling */
+@media only screen and (max-width: 550px) {
+	/* ...your css here and you're good to go! */
+    section#about{
+        position:relative;
+        max-width:100vw;
+        height: 100vh;
+    }
+    section#about>#nav-button{
+        z-index: 5;
+        position: fixed;
+        box-shadow: 0 0 3px 1px #aaa;
+        bottom: 2.5%;
+        right: 5%;
+        width: 7.5vh;
+        height: 7.5vh;
+        border-radius: 50%;
+        background: linear-gradient(to bottom right, rgba(95,14,209,1), rgba(34,12,57,0.8), rgba(0,0,0,1));
+    }
+    section#about>#nav-button>a{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    section#about>#nav-button i{
+        font-size: 3.5vh;
+        color: white;
+    }
+    section#about>header{
+        position: relative;
+        width: 100%;
+        height: 30%;
+        overflow: hidden;
+    }
+    section#about>header>img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    section#about>header>h1{
+        position: absolute;
+        width: 100%;
+        left: 50%;
+        top: 45%;
+        transform: translate(-50%, -55%);
+        color: white;
+        font-size: 5vh;
+        text-align: center;
+    }
+    section#about>article{
+        position: relative;
+        background-color: white;
+        width: 100%;
+        height: auto;
+        top: -5%;
+        transform: translateY(5%);
+        border-radius: 30px 30px 0 0;
+        overflow: hidden;
+    }
+    section#about>article>h1{
+        /* background-color: teal; */
+        font-size: 2.25vh;
+        padding: 0 15%;
+        text-align: center;
+        margin-top: 2vh;
+    }
+    section#about>article>p{
+        margin-top: 2vh;
+        font-size: 1.7vh;
+        color: grey;
+        text-align: justify;
+        padding: 0 7.5vw;
+    }
+
+    section#about>#services{
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin-bottom: 5%;
+    }
+    .title{
+        margin: 0 7.5vw;
+        width: 85%;
+        font-size: 2.25vh;
+    }
+    section#about>#services>.tab{
+        background-color: rgb(128, 128, 128, 0.1);
+        position: relative;
+        box-shadow: 0 0 3px 1px #aaa;
+        width: 85%;
+        height: auto;
+        margin: 2.5vh 7.5%;
+    }
+    section#about>#services>.tab>p{
+        color: grey;
+        width: 100%;
+        text-align: center;
+        font-size: 1.7vh;
+        padding: 1vh 7.5%;
+    }
+    section#about>#services>.tab>.img{
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    section#about>#services>.tab>.img>img{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    section#about>#mission{
+        margin-top: 3.7vh;
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    section#about>#mission>p{
+        font-size: 1.7vh;
+        color: grey;
+        text-align: justify;
+        padding: 1vh 7.5vw;
+    }
+    section#about>#subscribe{
+        position: relative;
+        width: 100%;
+        height: 20%;
+        background: url("../../assets/subscribe.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}

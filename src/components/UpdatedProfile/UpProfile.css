@@ -1,0 +1,62 @@
+
+/* mobile view styling */
+@media only screen and (max-width: 550px) {
+	/* ...your css here and you're good to go! */
+	section#profileUpdate{
+		position: relative;
+		width: 100vw;
+		height: calc(100vh - 7.5vh);
+		overflow: hidden;
+	}
+	
+	section#profileUpdate>h1{
+		margin-top: 4vh;
+		text-align: center;
+		font-size: 2.5vh;
+	}
+
+	section#profileUpdate>form{
+		position: relative;
+		width: 100%;
+		height: auto;
+		margin-top: 5vh;
+		display:grid;
+		font-size: 2vh;
+		font-family: "Poppins", sans-serif;
+	}
+	section#profileUpdate>form>label{
+		display: grid;
+		width: 80%;
+		margin: 0 10%;
+		font-weight: 550;
+	}
+	section#profileUpdate>form>label>input{
+		font-family: "Poppins", sans-serif;
+		font-size: 1.8vh;
+		display: flex;
+		height: 6vh;
+		border: 1px solid #C0CCD9;
+		border-radius: 0.5vh;
+		margin: 1.5vh 0 3vh;
+		padding-left: 5vw;
+	}
+	section#profileUpdate>form>label>input::placeholder{
+		color: #C0CCD9;
+	}
+	section#profileUpdate>form>label>input:focus{
+		outline: none;
+	}
+	
+	section#profileUpdate>button{
+		font-family: "Poppins", sans-serif;
+		font-size: 1.8vh;
+		position: relative;
+		color: white;
+		background-color: var(--yelBG);
+		border: none;
+		border-radius: 1vh;
+		width:40%;
+		height: 5.5%;
+		margin: 5% 30% 10%;
+	}
+}
