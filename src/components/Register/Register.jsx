@@ -12,7 +12,7 @@ const Register = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        axios.post(`http://127.0.0.1:5555/register`, {username, email, password})
+        axios.post(`https://fitter-mern-backend.vercel.app//register`, {username, email, password})
         .then(res => {
             console.log("fitter success:", res);
             setUsername(""); setEmail(""); setPassword("");

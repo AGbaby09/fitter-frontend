@@ -21,7 +21,7 @@ const Login = () => {
         console.log("mechanic:",mechanic)
         console.log("route:", route)
 
-        axios.post(`http://127.0.0.1:5555/login/${route}`, {email, password})
+        axios.post(`https://fitter-mern-backend.vercel.app//login/${route}`, {email, password})
         .then(res => {
             console.log("fitter success:", res);
             setEmail(""); setPassword("");
