@@ -26,7 +26,7 @@ const Login = () => {
             console.log("fitter success:", res);
             setEmail(""); setPassword("");
             if(res.data === "success"){
-                navigate("/user", {state: {id: email}});
+                navigate("/user");
             }
         })
         .catch(err => console.log("fitter error:", err));
