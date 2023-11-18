@@ -12,7 +12,7 @@ const Register = () => {
 
     axios.defaults.withCredentials = true;
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = (e) => {
         e.preventDefault();
         axios.post(`https://fitter-backend.vercel.app/register/`, {username, email, password})
         .then(res => {

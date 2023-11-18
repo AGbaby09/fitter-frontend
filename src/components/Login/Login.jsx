@@ -17,7 +17,7 @@ const Login = () => {
 
     axios.defaults.withCredentials = true;
     
-    const handleSubmit = async (e) => {
+    const handleSubmit = (e) => {
         e.preventDefault();
         console.log("user:",user)
         console.log("mechanic:",mechanic)
