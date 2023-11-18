@@ -14,6 +14,8 @@ const Login = () => {
     const [password, setPassword] = useState();
 
     const [route, setRoute] = useState("");
+
+    axios.defaults.withCredentials = true;
     
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -21,7 +23,7 @@ const Login = () => {
         console.log("mechanic:",mechanic)
         console.log("route:", route)
 
-        axios.post(`https://fitter-mern-backend.vercel.app//login/${route}`, {email, password})
+        axios.post(`https://fitter-backend.vercel.app/login/${route}`, {email, password})
         .then(res => {
             console.log("fitter success:", res);
             setEmail(""); setPassword("");
